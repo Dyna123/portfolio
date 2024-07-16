@@ -5,7 +5,7 @@ import Routing from './utils/Routing'
 function App() {
   return (
     <>
-      <div className=''>
+      <div className='overflow-x-hidden'>
 
         <Routing/>
       </div>
