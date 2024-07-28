@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import NavBar from './NavBar'
 import Page2 from "./Page2.jsx"
 import gsap from 'gsap';
+import Page3 from './Page3.jsx';
+import Page4 from './Page4.jsx';
 const Home = () => {
   const curtain = useRef(null);
   const name = useRef(null);
@@ -43,6 +45,8 @@ const Home = () => {
         </div>
       </div>
       <Page2 />
+      <Page3/>
+      <Page4/>
     </div>
   )
 }
