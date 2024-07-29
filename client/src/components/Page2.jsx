@@ -20,7 +20,7 @@ const Page2 = () => {
           scroller: "body",
           start: "top 20%",
           end: "top 40%",
-          scrub: 1,
+          scrub: 2,
         },
       });
     });

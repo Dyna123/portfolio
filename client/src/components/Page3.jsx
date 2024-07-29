@@ -33,7 +33,7 @@ const Page3 = () => {
     }, []);
 
     return (
-        <div className='h-screen w-screen bg-black relative' ref={main}>
+        <div className='h-screen w-screen bg-black relative ' ref={main}>
             <div ref={imgContainer} className='h-full w-full bg-[url("/aye2.jpg")] bg-contain bg-no-repeat bg-center'>
             </div>
             <div id='headingContainer' className='absolute bottom-52 text-7xl font-semibold tracking-widest w-full flex items-center justify-center text-white'>
