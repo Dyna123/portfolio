@@ -3,6 +3,7 @@ import IconCloud from './IconCloud';
 import GitHubCalendarComponent from './GitHubCalendar.jsx';
 
 const Page4 = () => {
+
   const iconSlugs = [
     'react',
     'typescript',
@@ -13,7 +14,6 @@ const Page4 = () => {
     'redux',
     'html5',
     'css3',
-    'sass',
     'git',
     'docker',
     'kubernetes',
@@ -32,11 +32,11 @@ const Page4 = () => {
     'postgresql'
     // Add more slugs as needed
   ];
-  const skills=['HTML','CSS','Gsap','Tailwind','JS','Node.js','Express.js','MongoDB','Postgres','SQL','Git','Next.js']
+  const skills=['HTML','CSS','Gsap','Tailwind','JS','Node.js','Express.js','MongoDB','Postgres','SQL','Git','Next.js','C','C++']
   return (
     <div className=' w-screen bg-black  text-white flex p-5'>
       <div id='leftSection' className='h-full w-1/2 '>
-        <IconCloud iconSlugs={iconSlugs} />
+        <IconCloud iconSlugs={iconSlugs}/>
       </div>
       <div id='rightSection' className=' w-1/2 '>
         <div id='topSection' className='w-[70%] p-10   ml-20'>

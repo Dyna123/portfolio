@@ -4,6 +4,7 @@ import Page2 from "./Page2.jsx"
 import gsap from 'gsap';
 import Page3 from './Page3.jsx';
 import Page4 from './Page4.jsx';
+import Marque from './Marque.jsx';
 const Home = () => {
   const curtain = useRef(null);
   const name = useRef(null);
@@ -47,6 +48,8 @@ const Home = () => {
       <Page2 />
       <Page3/>
       <Page4/>
+      <Marque/>
+      <div className='h-screen w-screen'> </div>
     </div>
   )
 }
