@@ -26,16 +26,18 @@ const Page3 = () => {
                     scrub:2,
                 },
                 y:-100
-            })  
+            })
         });
 
-        return () => ctx.revert();  
+        return () => ctx.revert();
     }, []);
 
     return (
         <div className='h-screen w-screen bg-black relative ' ref={main}>
             <div ref={imgContainer} className='h-full w-full bg-[url("/aye2.jpg")] bg-contain bg-no-repeat bg-center'>
+            <div className='absolute h-52 w-52 bg-cyan-600 blur-[10rem] rounded-xl top-10 right-10'></div>
             </div>
+            <div className='absolute h-52 w-52 bg-cyan-600 blur-[12rem] rounded-xl'></div>
             <div id='headingContainer' className='absolute bottom-52 text-7xl font-semibold tracking-widest w-full flex items-center justify-center text-white'>
                 <h1 ref={heading}>Expertise Unleashed</h1>
             </div>

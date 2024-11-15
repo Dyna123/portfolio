@@ -36,14 +36,14 @@ const Marque = () => {
     };
   },[])
   return (
-    <div ref={container} className='h-screen w-screen bg-black text-white flex   font-regular text-nowrap'>
-      <span ref={heading} className='text-[15rem] whitespace-nowrap ml-20 flex tracking-wider items-center [70%]'>
+    <div ref={container} className='h-96 w-screen bg-cyan-50 text-zinc-800 flex tracking-widest font-extralight  font-regular text-nowrap'>
+        <div> <span ref={heading} className='text-[15rem] whitespace-nowrap ml-20 flex tracking-wider items-center [70%]'>
         Wanna Refer ME?
-        <div ref={btn} className='flex items-center gap-4 cursor-pointer border border-solid border-white ml-20 p-2 rounded hover:bg-white hover:text-black transition-colors duration-500'>
+        <div ref={btn} className='flex items-center gap-4 cursor-pointer border border-solid border-black ml-20 p-2 rounded hover:bg-black hover:text-white transition-colors duration-500'>
         <button className='text-2xl tracking-normal'>Resume </button>
         <BsFileEarmarkArrowDown className='text-2xl'/>
         </div>
-    </span>
+    </span></div>
     </div>
   )
 }

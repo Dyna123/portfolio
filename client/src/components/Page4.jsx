@@ -38,15 +38,18 @@ const Page4 = () => {
       <div id='leftSection' className='h-full w-1/2 '>
         <IconCloud iconSlugs={iconSlugs}/>
       </div>
-      <div id='rightSection' className=' w-1/2 '>
+      <div id='rightSection' className=' w-1/2 relative'>
         <div id='topSection' className='w-[70%] p-10   ml-20'>
           <h1 className='w-full text-3xl '>Capabilities:</h1>
           <div id='skillContainer' className='w-full flex  flex-wrap  '>
             {skills.map((item,index)=>(
-              <p className='m-3 border border-solid border-white px-2 py-1 rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-black' key={index}>{item}</p>
+                <p className='m-3 border border-solid border-white px-2 py-1 rounded-md cursor-pointer transition-all duration-300 hover:bg-white hover:text-black' key={index}>{item}</p>
             ))}
+            <div className='absolute h-52 w-52 bg-cyan-600 blur-[10rem] rounded-xl top-96 -right-52'></div>
           </div>
+
         </div>
+
         <div className='w-full flex  items-center justify-center'>
         <GitHubCalendarComponent username="Dyna123" />
         </div>

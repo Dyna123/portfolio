@@ -4,7 +4,9 @@ import Page2 from "./Page2.jsx"
 import gsap from 'gsap';
 import Page3 from './Page3.jsx';
 import Page4 from './Page4.jsx';
+import Page5 from './Page5.jsx';
 import Marque from './Marque.jsx';
+import EndSection from './EndSection.jsx';
 const Home = () => {
   const curtain = useRef(null);
   const name = useRef(null);
@@ -31,7 +33,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
+    <div className='bg-black'>
       <div ref={mainDiv} className='h-[150vh] w-screen bg-[url("/hero4.jpg")] bg-no-repeat bg-cover bg-bottom  text-white '>
         <div ref={curtain} className='h-full w-full bg-black fixed flex items-center justify-center z-10'>
           <h1 className='text-9xl' ref={name}>Sambhav</h1>
@@ -41,7 +43,7 @@ const Home = () => {
           <h1 className='text-9xl'>Hey Folks!</h1>
           <p className='w-[75%] text-xl leading-8 mt-5 text-left'>I'm Sambhav, a web developer dedicated to creating visually stunning and highly functional websites. Let's turn your ideas into digital masterpieces!</p>
           <div className='w-[75%]'>
-            <button className='px-5 py-3 bg-red-500 mt-5 text-xl font-semibold rounded-md'>Know More</button>
+            <button className='px-5 py-3 bg-cyan-600 mt-5 text-xl font-semibold rounded-md'>Know More</button>
           </div>
         </div>
       </div>
@@ -49,7 +51,8 @@ const Home = () => {
       <Page3/>
       <Page4/>
       <Marque/>
-      <div className='h-screen w-screen'> </div>
+      <Page5/>
+      <EndSection/>
     </div>
   )
 }
